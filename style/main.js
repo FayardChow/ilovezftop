@@ -6,7 +6,7 @@ $(document).ready(function() {
     hdw.hover(function() {
         $(this).addClass('two').siblings().removeClass('two');
     });
-    hdw.click(function() {
+    hdw.hover(function() {
         $(this).addClass('one').siblings().removeClass();
         var hdw_index = hdw.index(this);
         $('.ct').eq(hdw.index(this)).show().siblings().hide();
